@@ -1,13 +1,13 @@
 # cli for generating asset manifests. based on gulp-rev, and uses the rev- modules for the hashing algo.
 
-[![npm package](https://nodei.co/npm/node-rev.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/request/)
+[![npm package](https://nodei.co/npm/node-rev.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/node-rev/)
 
 [![Dependency Status](https://img.shields.io/david/request/request.svg?style=flat-square)](https://david-dm.org/request/request)
-
 [![Build Status](https://travis-ci.org/kellyrmilligan/node-rev.svg?branch=master)](https://travis-ci.org/kellyrmilligan/node-rev)
-
 [![Coverage Status](https://coveralls.io/repos/github/kellyrmilligan/node-rev/badge.svg?branch=master)](https://coveralls.io/github/kellyrmilligan/node-rev?branch=master)
 
+### why?
+`gulp-rev` and `grunt-rev` are great, but what if you want to just use package.json scripts for your dev and build?
 
 ### node api
 ```
