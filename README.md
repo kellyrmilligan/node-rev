@@ -6,6 +6,8 @@
 
 [![Build Status](https://travis-ci.org/kellyrmilligan/node-rev.svg?branch=master)](https://travis-ci.org/kellyrmilligan/node-rev)
 
+[![Coverage Status](https://coveralls.io/repos/github/kellyrmilligan/node-rev/badge.svg?branch=master)](https://coveralls.io/github/kellyrmilligan/node-rev?branch=master)
+
 
 ### node api
 ```
