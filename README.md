@@ -4,6 +4,8 @@
 
 [![Dependency Status](https://img.shields.io/david/request/request.svg?style=flat-square)](https://david-dm.org/request/request)
 
+[![Build Status](https://travis-ci.org/kellyrmilligan/node-rev.svg?branch=master)](https://travis-ci.org/kellyrmilligan/node-rev)
+
 
 ### node api
 ```
