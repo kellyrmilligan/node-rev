@@ -1,5 +1,10 @@
 # cli for generating asset manifests. based on gulp-rev, and uses the rev- modules for the hashing algo.
 
+[![npm package](https://nodei.co/npm/node-rev.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/request/)
+
+[![Dependency Status](https://img.shields.io/david/request/request.svg?style=flat-square)](https://david-dm.org/request/request)
+
+
 ### node api
 ```
 import nodeRev from 'node-rev'
