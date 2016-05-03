@@ -14,7 +14,7 @@
   "scripts": {
     "test": "npm-run-all clean lint babel babel-test lab",
     "watch-test": "onchange 'src/*.es6' 'test/*.es6' -i -- npm test",
-    "lab": "lab -c -C -r tap -o stdout -r html -o coverage.html -r lcov | ./node_modules/.bin/coveralls",
+    "lab": "lab -c -C -r tap -o stdout -r html -o coverage.html",
     "lab-coveralls": "lab -r lcov | ./node_modules/.bin/coveralls",
     "clean": "rm -rf ./lib",
     "lint": "eslint src/ --ignore-path .gitignore",
