@@ -1,6 +1,6 @@
 {
   "name": "node-rev",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "cli and node api version of gulp/grunt-rev, uses rev-path, rev-hash to generate a json of assets",
   "keywords": "rev, rev-path, rev-hash, assets, manifest",
   "main": "./lib/index.js",
