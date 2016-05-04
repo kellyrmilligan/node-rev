@@ -1,7 +1,7 @@
 # Change Log
 
 ### 1.1.0
-    * added support for comma separated glob patterns
+* added support for comma separated glob patterns
 ```
 import nodeRev from 'node-rev'
 
