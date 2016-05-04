@@ -10,11 +10,12 @@ export default function(options) {
 
   const manifest = {}
   //use assert to require filesPath, outputDir
+  assert(options.files, 'files property is required')
   const filesPath = options.files
-  const outputDir = options.outputDir
+  const outputDir = options.outputDir || __dirname
   const outputDest = path.resolve(outputDir)
   const file = options.file
-  const hash = options.hash
+  const hash = options.hash || false
 
   function writeManifest(manifest) {
     if (file) {
@@ -25,7 +26,13 @@ export default function(options) {
     }
   }
 
-  const files = glob.sync(path.resolve(filesPath), {})
+  const filesPathParts = filesPath.split(',')
+  let files = []
+  filesPathParts.forEach(function(filePathPart) {
+    files = files.concat(files, glob.sync(path.resolve(filePathPart), {}))
+  })
+
+  console.log(files)
 
   let baseDir
   if (files && files.length === 1) {
@@ -58,6 +65,7 @@ export default function(options) {
     writeManifest(manifest)
 
   } else {
+    console.warn(`No files found matching ${path.resolve(filesPath)}`)
     writeManifest({})
   }
 }

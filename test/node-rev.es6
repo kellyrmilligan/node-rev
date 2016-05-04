@@ -32,4 +32,16 @@ lab.experiment('node-rev', function() {
     expect(manifest['test.css']).to.startWith('test-')
     done()
   })
+  lab.test('takes multiple glob patterns separated by commas', function(done) {
+    nodeRev({
+      files: 'fixtures/**/*.css,fixtures/**/*.js',//glob to files you want in the manifest
+      outputDir: 'tmp/',//where you want the files to be output that are part of the manifest
+      file: 'tmp/assets.json',//optional, allows you to specify location of manifest file and name it, default is root of the project
+      hash: true//if you are in dev mode, you can set this to false to just have it create the manifest with the same filenames
+    })
+    const file = fs.readFileSync('./tmp/assets.json', 'utf8')
+    const manifest = JSON.parse(file)
+    expect(manifest['test.css']).to.startWith('test-')
+    done()
+  })
 })
