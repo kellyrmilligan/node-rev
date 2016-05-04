@@ -1,6 +1,6 @@
 # cli for generating asset manifests. based on gulp-rev, and uses the rev- modules for the hashing algo.
 
-[![Dependency Status](https://david-dm.org/kellyrmilligan/node-rev.svg)](https://david-dm.org/kellyrmilligan/request)
+[![Dependency Status](https://david-dm.org/kellyrmilligan/node-rev.svg)](https://david-dm.org/kellyrmilligan/node-rev)
 [![Build Status](https://travis-ci.org/kellyrmilligan/node-rev.svg?branch=master)](https://travis-ci.org/kellyrmilligan/node-rev)
 [![Coverage Status](https://coveralls.io/repos/github/kellyrmilligan/node-rev/badge.svg?branch=master)](https://coveralls.io/github/kellyrmilligan/node-rev?branch=master)
 
