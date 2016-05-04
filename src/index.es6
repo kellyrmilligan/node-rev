@@ -32,8 +32,6 @@ export default function(options) {
     files = files.concat(files, glob.sync(path.resolve(filePathPart), {}))
   })
 
-  console.log(files)
-
   let baseDir
   if (files && files.length === 1) {
     baseDir = files[0].split('/').slice(0,-1).join('/')
