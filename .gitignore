@@ -202,3 +202,4 @@ lib/
 test/*.js
 test/*.map
 tmp/
+coverage.html
