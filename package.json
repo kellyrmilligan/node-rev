@@ -33,7 +33,7 @@
     "fs-extra": "^1.0.0",
     "yargs": "^6.0.0",
     "glob": "^7.0.3",
-    "rev-hash": "^1.0.0",
+    "rev-hash": "^3.0.0",
     "rev-path": "^1.0.0"
   },
   "devDependencies": {
